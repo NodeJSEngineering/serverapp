@@ -13,6 +13,10 @@ app.get('/test', (req, res) => {
     res.sendFile('index.html', {root: __dirname});      
 });
 
-app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
-    console.log(`Now listening on port ${port}`); 
-});
+// app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
+//     console.log(`Now listening on port ${port}`); 
+// });
+
+app.listen(process.env.PORT || port, '0.0.0.0', () => {
+    console.log("Server is running.");
+  });
