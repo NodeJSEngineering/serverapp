@@ -6,6 +6,8 @@ link generate
 npm i -s express
 
 http://localhost:5000/
+http://localhost:5000/stock
+
 
 https://testnodeappnew.herokuapp.com/
 https://testnodeappnew.herokuapp.com/test
